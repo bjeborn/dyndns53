@@ -29,8 +29,7 @@ If no profile is specified, the default or ENV is used by boto3.
 * route53:TestDNSAnswer
 * route53:ChangeResourceRecordSets
 
-## AWS policy example
-
+### AWS policy example
 
     {
         "Version": "2012-10-17",
