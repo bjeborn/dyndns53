@@ -13,15 +13,15 @@ Public IP address is retreived from external services ipify and ipinfo. Both ser
 
 ## Installation
 
-    git clone https://github.com/bjeborn/dyndns53.git
-    cd dyndns53
-    python3 -mvenv venv
-    source venv/bin/activate
-    pip install -r requirements.txt
+`git clone https://github.com/bjeborn/dyndns53.git`  
+`cd dyndns53`  
+`python3 -mvenv venv`  
+`source venv/bin/activate`
+`pip install -r requirements.txt`
 
 ## AWS credentials
 
-AWS profile can be specified with --aws-profile  
+AWS profile can be specified with `--aws-profile`  
 If no profile is specified, the default or ENV is used by boto3.  
 
 ### IAM account actions needed
@@ -64,8 +64,8 @@ If no profile is specified, the default or ENV is used by boto3.
 
 Update home.example.com in zone Z01234567ABCDEFGHIJKL with public ip looked up via external services
 
-    ./venv/bin/python dyndns53.py Z01234567ABCDEFGHIJKL home.example.com
+`./venv/bin/python dyndns53.py Z01234567ABCDEFGHIJKL home.example.com`
 
 Update local-service.example.com in zone Z01234567ABCDEFGHIJKL with address 192.168.0.100 and set TTL to 600 seconds
 
-    ./venv/bin/python dyndns53.py Z01234567ABCDEFGHIJKL home.example.com --ipaddr 192.168.0.100 --ttl 600
+`./venv/bin/python dyndns53.py Z01234567ABCDEFGHIJKL local-service.example.com --ipaddr 192.168.0.100 --ttl 600`
